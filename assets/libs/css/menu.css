@@ -1,0 +1,74 @@
+.carousel-inner img {
+   width: 100%;
+   height: 100%;
+ }
+
+body{
+  font-family: arial;
+}
+
+#menu ul {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  padding: 0%;
+  margin: 0%;
+  float: left;
+  width: 100%;
+  z-index: 999;
+}
+
+#menu ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 0 15px;
+  display: block;
+
+}
+
+#menu > ul > li{
+  float: left;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+}
+
+#menu > ul > li:hover {
+  max-width: 156px;
+}
+
+#menu .child-menu {
+  background: #2ecc71;
+  width: 200px;
+  position: absolute;
+  background: #27ae60;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+#menu .child-menu li{
+  float: none;
+  width: 100% !important;
+  border-left: 3px solid #2c3e50;
+}
+
+#menu .child-menu li:hover{
+  border-left: 3px solid #2c3e50;
+  background-color: #518e6b;
+  width: 100% !important;
+}
+
+/* #menu ul ul ul{
+  top: -4px;
+  left: 100%;
+} */
+
+#menu ul li:hover > ul{
+  display: block;
+}
